@@ -1,14 +1,18 @@
 # LetsCodeTyler
 
-Lets code tyler in todays age would be a series of DAO blockchains that work crosschain as a means to group up.
-Each chain would let their users trade in whatever manner they see, while linking to other DAO like chains to produce a network between decentralization.
+Tyler is a system, where a user can choose which Decentralized Identifiers (DIDs) ,or lack there of, Auth they are providing with each request on the net.
 
-Imagine non-monetary blockchains that are instead based on research, and a common goal.
+People should have backups amongst eachother too. Each to help others from losing data.
 
-Image we build a tyler smart contract. Image that smart contract starts on the monetary blockchains, in order to show people non-monetary blockchain info-sources.
-Imagine we use IPFS to make ourselves unstoppable.
+Instead of building social media platforms the way were doing it is wrong.
+Lets rethink of a platform as only the system you load into, that loads your social connections.
+Lets build platforms you load from your own device, and it connects with friends and their servers.
+Each person, their own host, the barrier of their own burden of data.
 
-How would you build tyler?
-Do you have the skills to program an unstoppable network?
-We are looking for programers to help us start a revolution.
-https://t.me/letscodetyler
+Each person will use IPFS servers to help host content.
+The general rule should be, if you share content, you should help host shared content on IPFS.
+
+There will be many different aspects of this project. Currently the population is dumb, and meanwhile our government and MEGA corp are building AGI.
+
+What Tyler should be, is a simple platform that people can use, but at the same time become a learning platform for things.
+The platform should grow eventually to use technology and put it back in the hands of citizens.
