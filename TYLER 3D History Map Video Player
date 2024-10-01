@@ -40,3 +40,73 @@ Imagine pausing a video to see what book is on the shelf, and now you're reading
 
 A simple logo on a vest can even be tagged, where to buy that item, whos selling it the cheapest, reviews, history of the brand, whos "publicly" listed as employed there.
 Or simple addons, like you've got one friend who does commentary on stuff to point out or add too different things so you could turn that friends, or content creators addon for example like addons for reading a book.
+
+
+
+Would this be a good method below? Anyone know how to do this? 
+Join https://t.me/letscodetyler to chat about the project!
+
+To code your 3D historical map project in the easiest and most structured way, you'll need to break it down into manageable components. Here’s a step-by-step plan for building it:
+
+### 1. **3D Globe Visualization**
+   - **Tool**: Use **Three.js** or **CesiumJS**. Both are JavaScript libraries for rendering 3D graphics in a web browser.
+     - **Three.js** is more general and offers flexibility for custom 3D visualizations.
+     - **CesiumJS** is specifically designed for 3D geospatial data, which could simplify the Earth map rendering.
+   - **Setup**:
+     - Install **Three.js** using npm: `npm install three`.
+     - Follow basic tutorials for rendering a 3D globe model.
+     - Add interactive controls so users can rotate and zoom on the globe.
+
+### 2. **Timeline Feature**
+   - **Tool**: Use a JavaScript UI library like **D3.js** to create a scalable, interactive timeline.
+     - D3.js is great for building data-driven visualizations, such as time-based charts.
+   - **Setup**:
+     - Install D3.js: `npm install d3`.
+     - Create a timeline that synchronizes with the 3D globe, so as users scroll or click through time, relevant events appear on the globe.
+
+### 3. **Backend Development**
+   - **Programming Language**: Since you're familiar with Rust, use **Rocket** or **Actix Web** for building the backend API.
+   - **Database**: Use **PostgreSQL** for managing historical events, user data, and locations (with **PostGIS** for geographic data support).
+     - You can store events with metadata like dates, tags, and geographic coordinates.
+   - **Setup**:
+     - Install **Rocket** or **Actix Web**: `cargo add rocket` or `cargo add actix-web`.
+     - Create RESTful APIs to handle user-contributed events, retrieving events by date, and geographic location.
+
+### 4. **Crowdsourced Data Contribution**
+   - Create a form on the frontend for users to contribute events.
+   - **Feature**: The form will require users to add details like:
+     - Event title, description, date range, location, and sources.
+   - **Backend**:
+     - Validate user submissions and store them in the database.
+     - Implement user authentication and authorization (for submitting, editing, or deleting events) using JWT tokens for secure access.
+
+### 5. **IPFS Integration**
+   - **Tool**: Use the **IPFS HTTP Client** to link events with decentralized resources (e.g., 3D battle visualizations).
+     - Users will upload assets to IPFS using the client, and you’ll store the IPFS link in your database.
+   - **Setup**:
+     - Install the IPFS client: `npm install ipfs-http-client` or use the Rust IPFS crate.
+     - Allow users to submit an IPFS link to the event they create.
+     - Retrieve and display content linked from IPFS when viewing an event on the globe.
+
+### 6. **Frontend-Backend Communication**
+   - **Tool**: Use **React** or **Vue.js** for the frontend framework.
+     - React works well with interactive components (like the 3D globe and timeline).
+   - **Setup**:
+     - Install React: `npx create-react-app my-app`.
+     - Make API calls to your Rust backend to fetch historical events, and render the results on the globe.
+     - Use WebSockets if you want real-time updates (e.g., when new events are added).
+
+### 7. **Deployment**
+   - **Self-hosted**: You can host your app on a VPS or even a **Raspberry Pi** if you're targeting lightweight hardware.
+   - **Frontend**: Deploy the frontend using services like **Vercel** or **Netlify**.
+   - **Backend**: Deploy your Rust API on **Docker**, **DigitalOcean**, or **AWS**.
+   - **Database**: Use **AWS RDS**, **DigitalOcean**, or self-host **PostgreSQL**.
+
+### 8. **Enhancements**
+   - **Event Filtering**: Allow users to filter events by type, region, and timeframe, showing them on the globe.
+   - **Social Integration**: Users could discuss or vote on events for credibility and community curation.
+   - **3D Models for Historical Events**: For complex events like battles, users can upload 3D models or animations to visualize how events occurred over time.
+
+---
+
+This breakdown makes it more manageable to build each part of the project. Would you like me to provide code snippets for a particular part?
