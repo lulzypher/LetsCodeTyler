@@ -1,0 +1,42 @@
+Historical 3D Map Timeline with Source Attribution and IPFS Integration
+This project aims to build an interactive 3D map of the Earth that visualizes a timeline of historical events. The platform will allow users to explore history in both spatial and temporal dimensions, enhancing the understanding of how events unfolded globally over time. Key features of the platform include:
+
+3D Earth Visualization:
+
+Users can explore a fully interactive, rotating 3D globe, zooming in on geographic locations where historical events took place.
+The globe will be overlaid with markers that represent key events in history, from battles to significant cultural moments.
+Event Timeline:
+
+A scalable timeline feature will allow users to navigate through different eras. As users move through time, corresponding events will appear on the globe, making it easy to understand the historical context geographically and temporally.
+Each event can be tagged with specific timeframes (down to the most detailed level available based on evidence).
+Crowdsourced Historical Data and Citations:
+
+Users will be able to contribute by adding or updating historical events, providing detailed information and citing academic or reliable sources to support their claims.
+Sources will be required for each submission, ensuring the credibility of the information. This will be verified through user contributions and peer reviews.
+Events can be dynamically updated with new discoveries or information, giving the project a community-driven element.
+IPFS Integration:
+
+For detailed visualizations, users can upload or link to IPFS (InterPlanetary File System) resources. For example, an event might include an IPFS link that leads to a 3D reconstruction or an animated visualization of how a battle unfolded.
+These resources will be decentralized, ensuring the data remains accessible and immutable.
+Historical Event Tagging:
+
+Events will be categorized and tagged for easy searchability. Tags will include dates, locations, types of events (e.g., battles, treaties, discoveries), and associated historical figures.
+Users will be able to filter and explore specific types of events based on their interests.
+Tech Stack:
+
+Frontend: WebGL or Three.js for 3D map rendering, integrated with a timeline interface for event navigation.
+Backend: Rust-based server with a database for storing events, users, and metadata. The database will include support for time-series data and geographic information (GIS).
+IPFS: Integration for hosting larger media and complex visualizations that are decentralized and linked directly from event descriptions.
+Peer-to-Peer Elements: Option to decentralize user contributions through peer-to-peer protocols, ensuring resilience and community ownership of historical data.
+
+This map allows people to chose which sources they want, to weave their stories.
+
+Imagine that videos are built and the sources that they clipped, could easily be clicked to see the highest resolution full video. Same with clipped documents or news articles. Even links to historical chats
+
+Imagine a movie where you could follow the start of bitcoin through internet historical events, follow the github changes, with the bitcoin forums and emails.
+
+Make the material easily linked, so this way we share just the highres file and we dont have to host a million different sizes.
+Imagine pausing a video to see what book is on the shelf, and now you're reading the actual book, or in an info page about the book/its author.
+
+A simple logo on a vest can even be tagged, where to buy that item, whos selling it the cheapest, reviews, history of the brand, whos "publicly" listed as employed there.
+Or simple addons, like you've got one friend who does commentary on stuff to point out or add too different things so you could turn that friends, or content creators addon for example like addons for reading a book.
